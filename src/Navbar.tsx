@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="navbar-icons">
+        <button className="navbar-admin-btn" onClick={() => window.location.hash = '#admin'}>Admin</button>
         <div className="navbar-bell">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2C8.686 2 6 4.686 6 8V11.586L4.293 13.293C3.902 13.684 4.149 14.316 4.707 14.316H19.293C19.851 14.316 20.098 13.684 19.707 13.293L18 11.586V8C18 4.686 15.314 2 12 2ZM12 22C13.104 22 14 21.104 14 20H10C10 21.104 10.896 22 12 22Z" fill="#fff"/>
