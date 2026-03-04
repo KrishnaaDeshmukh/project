@@ -1,3 +1,126 @@
+.program-card.animated {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 1rem;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeInUp 0.5s;
+}
+.program-card.animated:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.program-card-image {
+  width: 120px;
+  height: 80px;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.program-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.program-card-content {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.program-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #282c34;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.program-card-desc {
+  color: #444;
+  font-size: 0.97rem;
+}
+.program-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 0.7rem;
+}
+.program-card-action {
+  background: #f7f7f7;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.97rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.program-card-action .action-icon {
+  display: flex;
+  align-items: center;
+}
+.program-card-action .action-label {
+  margin-left: 0.2rem;
+}
+.program-card-action.delete {
+  color: #e74c3c;
+}
+.program-card-action.duplicate {
+  color: #3498db;
+}
+.program-card-action.edit {
+  color: #f1c40f;
+}
+.program-card-action.delete:hover {
+  background: #fdecea;
+  box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+}
+.program-card-action.duplicate:hover {
+  background: #eaf6fd;
+  box-shadow: 0 2px 8px rgba(52,152,219,0.08);
+}
+.program-card-action.edit:hover {
+  background: #fffbe6;
+  box-shadow: 0 2px 8px rgba(241,196,15,0.08);
+}
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.program-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #282c34;
+}
+.program-card p {
+  margin: 0;
+  color: #444;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
